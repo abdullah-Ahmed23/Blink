@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <title>Blink</title>
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+            <nav class="desktop " id="navbar">
+                <div class="logo">
+                    <img src="assets/logo.svg" alt="">
+                </div>
+                <div class="links">
+                    <ul class="nav-links">
+                        <li><a href="">Home</a></li>
+                        <li class="pages" ><a  href="">Pages</a>
+                            <ul class="drop">
+                                <li class="nav-item"><a href="about-us.html">About Us</a></li>
+                                <li class="nav-item"><a href="pricing.html">Our Pricing</a></li>
+                                <li class="nav-item"><a href="services.html">Our Services</a></li>
+                                <li class="nav-item"><a href="signin.html">Sign In</a></li>
+                                <li class="nav-item"><a href="signup.html">Sign Up</a></li>
+                                <li class="nav-item"><a href="reset-password.html">Reset Password</a></li>
+                                <li class="nav-item"><a href="mail-success.html">Mail Success</a></li>
+                                <li class="nav-item"><a href="404.html">404 Error</a></li>
+                            </ul></li>
+ 
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="dark-box">
+                    <label class="theme-switch">
+                        <input type="checkbox" class="theme-switch__checkbox">
+                        <div class="theme-switch__container">
+                          <div class="theme-switch__clouds"></div>
+                          <div class="theme-switch__stars-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+                            </svg>
+                          </div>
+                          <div class="theme-switch__circle-container">
+                            <div class="theme-switch__sun-moon-container">
+                              <div class="theme-switch__moon">
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                                <div class="theme-switch__spot"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </label>
+                      <label class="menuButton" for="check">
+                        <input type="checkbox" id="check">
+                        <span class="top"></span>
+                        <span class="mid"></span>
+                        <span class="bot"></span>
+                    </label>
+                </div>
+                <div class="s-Links">
+                    <a href="">Sign In</a>
+                    <a href="">Sign Up</a>
+                </div>
+              
+            </nav>
+            <nav class="mobile" id="navbar">
+
+                <div class="links">
+           
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="s-Links">
+                    <a href="">Sign In</a>
+                    <a href="">Sign Up</a>
+                </div>
+            </nav> 
+        </div>
+    </header>
+    <section class="hero pt-5">
+        <div class="container hero-co  mt-5">
+            <div class="row justify-content-center align-items-center ">
+            <div class="text col-lg-6 col-md-8 col-sm-12 ">
+                <h1 data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-once="true">A Complete Template For SaaS And Startup <span> Websites</span></h1>
+                <p data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="800" data-aos-once="true" class="py-4">Improve your daily UX work and create wireframes and diagrams, prototypes, handoff documentation.</p>
+                <a data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"  data-aos-once="true" href="#" class="my-4">Start 7o Day Free trial</a>
+                <div class="bg-circle-3"></div>
+            </div>
+            <div class="img col-lg-6 col-md-12 col-sm-12 " data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-once="true">
+                <img src="assets/app.svg" alt="">
+                <div class="bg-circle-2"></div>
+             
+
+            </div>
+        </div>
+        <div class="bg-circle"></div>
+    
+        
+        </div>
+        <div>
+            <div class="bg-circle-4"></div>
+        </div>
+    </section>
+    <section class="Service my-4 ">
+        <div class="title-s">
+        <p class="title">Service We Provide</p>
+        <h1>Mix & Match Our Tools
+            Plan That Fits</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="container">
+            <div class="row pt-5 " data-aos="zoom-in-up" data-aos-easing="linear"
+            data-aos-duration="600" >
+                <div  class=" col-lg-3 col-md-3 col-sm-12 mt-sm-5   cardN" data-aos="zoom-in-up"  >
+                    <div class="icon">
+                        <i class="fa-brands fa-android"></i>
+                    </div>
+                    <h3>Mobile auto layout</h3>
+                    <p>We have auto mobile layout that help you faster UI and wireframe design.</p>
+                    <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+                <div  class="col-lg-3 col-md-3 col-sm-12 mt-5  cardN">
+                    <div class="icon">
+                        <i class="fa-brands fa-android"></i>
+                    </div>
+                    <h3>Mobile auto layout</h3>
+                    <p>We have auto mobile layout that help you faster UI and wireframe design.</p>
+                    <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+                <div   class="col-lg-3 col-md-12 col-sm-12 mt-5  cardN">
+                    <div class="icon">
+                        <i class="fa-brands fa-android"></i>
+                    </div>
+                    <h3>Mobile auto layout</h3>
+                    <p>We have auto mobile layout that help you faster UI and wireframe design.</p>
+                    <a href="#">Learn More <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Managment  ">
+        <div class="container pt-5">
+            <div class="row align-items-center ">
+                <div class="col-lg-6 col-md-12 col-sm-12  "data-aos="zoom-in-right"   data-aos-duration="1000" >
+                    <img src="assets/app-ss1.svg" alt="">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 pt-4 text "data-aos="zoom-in-right"   data-aos-duration="1000"">
+                    <p class="main  ">Management & Analysis</p>
+                    <h2 class="py-2">Solutions for every
+                        Single problems</h2>
+                        <p class="pb-5">Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque laudantium.</p>
+                        <div class="icons d-flex  justify-space-between gap-5">
+                            <div class="hero-icon d-flex gap-4 align-items-center">
+                                <i><i class="fa-solid fa-gear"></i></i>
+                                <div class="text ">
+                                    <p>Multiple Managers</p>
+                                    <p>Quis autem vel eum reprehenderit</p>
+                                </div>
+                            </div>
+                            <div class="hero-icon d-flex gap-4 align-items-center">
+                                <i><i class="fa-solid fa-comment"></i></i>
+                                <div class="text ">
+                                    <p>Multiple Managers</p>
+                                    <p>Quis autem vel eum reprehenderit</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Use py-5 ">
+        <div class="container d-flex align-items-center">
+            <div class="row justify-content-center align-items-center">
+                <div class="text col-lg-6 col-md-12 col-sm-12 ">
+                    <p data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-once="true" class="">Use & Customization</p>
+                    <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="900" data-aos-once="true" class="text-white">Getting better way to Saas uses</h1>
+                    <p data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="1000" data-aos-once="true" class="text-white">Sed ut perspiciatis unde omnis natus error voluptatem accusantium doloremque laudantium totam.</p>
+                    <div data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom" data-aos-delay="1200" data-aos-once="true" class="icon">
+                        <i class="el"><i class="fa-solid fa-bolt"></i></i>
+                        <div class="text">
+                            <p class="text-white">Become faster</p>
+                            <a  href="#">Learn More <i  class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img col-lg-6 col-md-12 col-sm-12 " data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-once="true">
+                    <img src="assets/app-ss2.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="shape">
+            <img src="assets/shape1.svg" alt="">
+        </div>
+        <div class="shape2">
+            <img src="assets/shape2.svg" alt="">
+        </div>
+    </section>
+    <section class="pricing text-center pt-5">
+        <div class="container">
+            <div class="he">
+        <p>Pricing</p>
+    </div>  
+        <h3>
+            Pricing & Plans
+        </h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+
+        <div class="row mt-5   ">
+        <div class="cardM col-lg-4    " data-aos="fade-down"
+        data-aos-anchor-placement="top-bottom" data-aos-delay="600" data-aos-once="true"
+        data-aos-duration="800">
+            <div class="head">
+            <p class="one">starter</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p><span>$</span>0 <span>/mo</span></p>
+        </div>
+        <div class="link">
+            <a href="#">Start free trial</a>
+        </div>
+        <div class="footer">
+            <p>Cras justo odio.</p>
+            <p>Dapibus ac facilisis in.</p>
+            <p>Morbi leo risus.</p>
+            <p>Excepteur sint occaecat velit.</p>
+        </div>
+        </div>
+        <div class="cardM col-lg-4    " data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom" data-aos-delay="800" data-aos-once="true"
+        data-aos-duration="800">
+            <div class="head">
+            <p class="one">Exclusive</p>      
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p><span>$</span>99 <span>/mo</span></p>
+        </div>
+        <div class="link">
+            <a href="#">Start free trial</a>
+        </div>
+        <div class="footer">
+            <p>Cras justo odio.</p>
+            <p>Dapibus ac facilisis in.</p>
+            <p>Morbi leo risus.</p>
+            <p>Excepteur sint occaecat velit.</p>
+        </div>
+        </div>
+        <div class="cardM  col-lg-4    " data-aos="fade-down"
+        data-aos-anchor-placement="top-bottom" data-aos-delay="1000" data-aos-once="true"
+        data-aos-duration="800">
+            <div class="head">
+            <p class="one">Premium</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p><span>$</span>150 <span>/mo</span></p>
+        </div>
+        <div class="link">
+            <a href="#">Start free trial</a>
+        </div>
+        <div class="footer">
+            <p>Cras justo odio.</p>
+            <p>Dapibus ac facilisis in.</p>
+            <p>Morbi leo risus.</p>
+            <p>Excepteur sint occaecat velit.</p>
+        </div>
+        </div>
+
+    </div>
+    </div>       
+    </section>
+    <section class="about text-center py-5 mt-5">
+        <div class="he">
+            <p>about</p>
+        </div>
+        <h3>6000+ Ratings Across Software Review</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+    <div class="container mt-5">
+        <div class="row">
+            
+            <div class="counter col-lg-4 col-md-6 position-relative "   data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="800" data-aos-once="true" >
+                <h3><span id="satisfaction">0</span>%</h3>
+                <p>Satisfaction</p>
+                <div class="shape"></div>
+            </div>
+            <div class="counter col-lg-4 col-md-6 position-relative "   data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="1000" data-aos-once="true">
+                <h3><span id="happyUsers">0</span>K</h3>
+                <p>Happy Users</p>
+                <div class="shape2"></div>
+            </div>
+            <div class="counter col-lg-4 col-md-12 position-relative "
+             data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom" data-aos-delay="1200" data-aos-once="true">
+                <h3><span id="downloads">0</span>k+</h3>
+                <p>Downloads</p>
+                <div class="shape3"></div>
+            </div>
+            
+            </div>
+            </div>
+
+            
+    
+     
+    
+    </section>
+    <section class="swiper-m mt-5 py-5">
+        <div class="he">
+            <p>Customer Reviews</p>
+            <h3>Our Testimonials</h3>
+            
+        </div>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+        <div class="container">
+        <div class="swiper mySwiper mt-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="cardS">
+                    <div class="text">
+                        <h3>On the other hand denoun with righteous and disliks men who are beguiled demorae momentc blinded by desire that can
+                        </h3>
+                    </div>
+                    <div class="card-object d-flex gap-4 align-items-center">
+                    <div class="card-img">
+                        <img src="assets/card-img/photo_1_2023-11-19_01-14-58.jpg" alt="">
+
+                    </div>
+                    <div class="card-text">
+                        <p>kamal hosny</p>
+                        <p>Web devloper</p>
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardS">
+                    <div class="text">
+                        <h3>On the other hand denoun with righteous and disliks men who are beguiled demorae momentc blinded by desire that can
+                        </h3>
+                    </div>
+                    <div class="card-object d-flex gap-4 align-items-center">
+                    <div class="card-img">
+                        <img src="assets/card-img/photo_2_2023-11-19_01-14-58.jpg" alt="">
+
+                    </div>
+                    <div class="card-text">
+                        <p>abdulrhman ashraf</p>
+                        <p>Word press</p>
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardS">
+                    <div class="text">
+                        <h3>On the other hand denoun with righteous and disliks men who are beguiled demorae momentc blinded by desire that can
+                        </h3>
+                    </div>
+                    <div class="card-object d-flex gap-4 align-items-center">
+                    <div class="card-img">
+                        <img src="assets/card-img/photo_3_2023-11-19_01-14-58.jpg" alt="">
+
+                    </div>
+                    <div class="card-text">
+                        <p>Mahmoud EL-Shazly</p>
+                        <p>Web devloper</p>
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardS">
+                    <div class="text">
+                        <h3>On the other hand denoun with righteous and disliks men who are beguiled demorae momentc blinded by desire that can
+                        </h3>
+                    </div>
+                    <div class="card-object d-flex gap-4 align-items-center">
+                    <div class="card-img">
+                        <img src="assets/card-img/photo_4_2023-11-19_01-14-58.jpg" alt="">
+
+                    </div>
+                    <div class="card-text">
+                        <p>John Eid</p>
+                        <p>Marketing</p>
+                    </div>
+                </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="cardS">
+                    <div class="text">
+                        <h3>On the other hand denoun with righteous and disliks men who are beguiled demorae momentc blinded by desire that can
+                        </h3>
+                    </div>
+                    <div class="card-object d-flex gap-4 align-items-center">
+                    <div class="card-img">
+                        <img src="assets/card-img/photo_5_2023-11-19_01-14-58.jpg" alt="">
+
+                    </div>
+                    <div class="card-text">
+                        <p>Muhammad El-sawy</p>
+                        <p>Marketing-Management</p>
+                    </div>
+                </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="custom-pagination mt-5">
+                <!-- Create custom pagination bullets here -->
+                <span class="pagination-bullet"></span>
+                
+                
+          </div>
+        </div>
+        </div>
+    </section>
+    <section class="Blogs">
+        <div class="he text-center">
+            <p>Blogs</p>
+            <h3>Our Latest News</h3>
+        </div>
+        <div class="container py-5">
+          
+            <div class="row gap-2">
+                <div class="CardL col-lg-4 col-md-6 col-sm-12">
+                    <div class="card-img">
+                        <img src="assets/blog-1.jpg" alt="">
+
+                    </div>
+                    <div class="text">
+                        <p class="text-primary pt-2">web Solution</p>
+                        <p>Make a better website solution for your product.</p>
+                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt dolore magna.</p>
+                        <a href="">Read Blog--></a>
+                    </div>
+                </div>
+                <div class="CardL  col-lg-4 col-md-6 col-sm-12">
+                    <div class="card-img">
+                        <img src="assets/blog-2.jpg" alt="">
+
+                    </div>
+                    <div class="text">
+                        <p class="text-primary pt-2">UI Interface</p>
+                        <p>The Science of Color Contrast — An Expert Designer’s
+                            Guide.</p>
+                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt dolore magna.</p>
+                        <a href="">Read Blog--></a>
+                    </div>
+                </div>
+                <div class="CardL  col-lg-4 col-md-6 col-sm-12">
+                    <div class="card-img">
+                        <img src="assets/blog-3.jpg" alt="">
+
+                    </div>
+                    <div class="text">
+                        <p class="text-primary pt-2">web Solution</p>
+                        <p>Make a better website solution for your product.</p>
+                        <p>Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt dolore magna.</p>
+                        <a href=""> Read Blog--> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Ready py-5">
+     
+        <div class="container ">
+            <div class="mai">
+                <div class="text ">
+                    <h2>Ready to dive in?
+                        Start your free trial today.</h2>
+                </div>
+                <div class="link ">
+                    <a href="">Get Started</a>
+                </div>
+            </div>
+            
+            <img class="shape5" src="assets/bg-shape.svg" alt="">
+                
+          
+        </div>
+    </section>
+
+    
+
+</body>
+<script src="https://unpkg.com/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="Header-Footer.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+  <script type="text/javascript">
+    $('[data-aos]').parent().addClass('delete_extra_space')
+  </script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // When window width is >= 768px
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    // When window width is >= 992px
+    992: {
+      slidesPerView: 1,
+      spaceBetween: 50,
+    },
+    // When window width is >= 1200px
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: 150,
+    }
+    // Add more breakpoints as needed
+  }
+});
+
+// The rest of your custom pagination code...
+
+
+var customPagination = document.querySelector('.custom-pagination');
+
+// Function to create pagination bullets
+function createPaginationBullets() {
+  for (var i = 0; i < 4; i++) { 
+    var bullet = document.createElement('span');
+    bullet.classList.add('pagination-bullet');
+    if (i === 0) bullet.classList.add('active'); // Set the first bullet as active
+    bullet.addEventListener('click', function() {
+      swiper.slideTo(i); // Slide to the corresponding index
+    });
+    customPagination.appendChild(bullet);
+  }
+}
+
+createPaginationBullets();
+
+var bullets = document.querySelectorAll('.custom-pagination .pagination-bullet');
+
+swiper.on('slideChange', function() {
+  var activeIndex = swiper.realIndex % 6; // Get the active index within the range of 0-5
+  bullets.forEach(function(bullet, index) {
+    if (index === activeIndex) {
+      bullet.classList.add('active');
+    } else {
+      bullet.classList.remove('active');
+    }
+  });
+});
+
+  </script>
+</html>
